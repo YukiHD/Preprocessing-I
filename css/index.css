@@ -1,1 +1,319 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  padding: 3% 0;
+}
+.flex-50 {
+  width: 50%;
+  margin: 0 auto;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.wrapper {
+  max-width: 880px;
+  margin: 30px auto;
+  border: 2px solid #3d3a3a27;
+}
+nav {
+  display: flex;
+  padding: 3% 0;
+  justify-content: flex-end;
+  align-items: center;
+  background: #f5f5f5;
+  border-bottom: 2px solid #3d3a3a27;
+}
+nav a {
+  text-decoration: none;
+  color: #1412128f;
+  margin: 0 20px;
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+nav a:hover {
+  color: black;
+}
+header {
+  display: flex;
+  padding: 3% 0;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 2px solid #3d3a3a27;
+}
+header .header-img {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+header .header-img img {
+  max-width: 90%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  header .header-img {
+    display: none;
+  }
+}
+header .header-text {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header .header-text {
+    width: 100%;
+  }
+}
+header .header-text h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+header .header-text h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1412128f;
+  font-style: italic;
+  padding: 3%;
+}
+header .header-text p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 5% 0;
+  color: #141212c5;
+}
+header .header-text button {
+  width: 40%;
+  margin: 0 30%;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1% 5%;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #3d3a3a27;
+}
+header .header-text button:hover {
+  background: black;
+  color: white;
+}
+.more-info {
+  display: flex;
+  border-bottom: 2px solid #3d3a3a27;
+}
+.more-info .description {
+  width: 50%;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 3% 0;
+}
+.more-info .description h2,
+.more-info .description p {
+  padding: 3%;
+}
+.more-info .description h2 {
+  font-size: 1.8rem;
+}
+.more-info .description p {
+  font-size: 1.2rem;
+}
+.more-info .description a {
+  font-style: italic;
+  text-decoration: none;
+  color: #1412128f;
+}
+.more-info .addition {
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0;
+  width: 50%;
+}
+.more-info h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.more-info ul {
+  width: 90%;
+  padding: 3%;
+}
+.more-info li {
+  border-top: 2px solid #3d3a3a27;
+  border-left: 2px solid #3d3a3a27;
+  border-right: 2px solid #3d3a3a27;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  padding: 3%;
+  background: #f5f5f5;
+}
+.more-info li:last-child {
+  border-bottom: 2px solid #3d3a3a27;
+}
+.work-history {
+  padding: 3%;
+}
+.work-history h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+.work-history table {
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.work-history thead tr:first-child {
+  background-color: #f5f5f5;
+}
+.work-history tr {
+  border-top: 2px solid #3d3a3a27;
+  border-bottom: 2px solid #3d3a3a27;
+}
+.work-history td {
+  padding: 1%;
+}
+.work-history th {
+  text-align: left;
+  font-weight: bold;
+  padding: 1%;
+}
+footer {
+  background: #f5f5f5;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  padding: 1% 0;
+  border-top: 2px solid #3d3a3a27;
+  margin-top: 10%;
+}
